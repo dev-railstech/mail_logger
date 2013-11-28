@@ -1,0 +1,29 @@
+<h1>Listing viewers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @viewers.each do |viewer| %>
+      <tr>
+        <td><%= viewer.name %></td>
+        <td><%= viewer.email %></td>
+        <td><%= link_to 'Show', viewer %></td>
+        <td><%= link_to 'Edit', edit_viewer_path(viewer) %></td>
+        <td><%= link_to 'Destroy', viewer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Viewer', new_viewer_path %>
