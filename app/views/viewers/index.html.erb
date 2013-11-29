@@ -27,8 +27,10 @@
 <div id="tracker_url"></div>
 <hr/>
 <script>
-  $("#tracking_keyword").keyup(function(){
-      $("#tracker_url").html("http://<%= request.host_with_port %>/shah/"+ $(this).val() + "/data.gif");
-  });
+  setTimeout(function(){
+      $("#tracking_keyword").keyup(function(){
+          $("#tracker_url").html("http://<%= request.host_with_port %>/shah/"+ $(this).val() + "/data.gif");
+      });
+  },1000);
 </script>
 
