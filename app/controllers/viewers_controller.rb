@@ -1,4 +1,5 @@
 class ViewersController < ApplicationController
+  http_basic_authenticate_with name: "shahzad", password: "secret" , :except => :new_log
   before_action :set_viewer, only: [:show, :edit, :update, :destroy]
 
   # GET /viewers

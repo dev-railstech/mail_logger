@@ -5,7 +5,7 @@
     <ignored path="mail_logger.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/routes.rb" changelist="8c6d893b-75bf-44f2-b94b-bdf933fb67ab" time="1385748360180" ignored="false" />
-    <file path="/viewers_controller.rb" changelist="8c6d893b-75bf-44f2-b94b-bdf933fb67ab" time="1385664660417" ignored="false" />
+    <file path="/viewers_controller.rb" changelist="8c6d893b-75bf-44f2-b94b-bdf933fb67ab" time="1385749618496" ignored="false" />
     <file path="/Gemfile" changelist="8c6d893b-75bf-44f2-b94b-bdf933fb67ab" time="1385667708621" ignored="false" />
     <file path="/show.html.erb" changelist="8c6d893b-75bf-44f2-b94b-bdf933fb67ab" time="1385668529521" ignored="false" />
     <file path="/index.html.erb" changelist="8c6d893b-75bf-44f2-b94b-bdf933fb67ab" time="1385749145301" ignored="false" />
@@ -51,19 +51,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewers_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="viewers_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/viewers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="135" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+            <state line="14" column="32" selection-start="398" selection-end="398" vertical-scroll-proportion="0.41754386">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/viewers/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="37" selection-start="657" selection-end="657" vertical-scroll-proportion="0.9156194">
+            <state line="30" column="101" selection-start="721" selection-end="721" vertical-scroll-proportion="-19.615385">
               <folding />
             </state>
           </provider>
@@ -89,10 +89,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/viewers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/viewers/show.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/viewers/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/viewers_controller.rb" />
       </list>
     </option>
   </component>
@@ -535,13 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/viewers/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="65" selection-start="290" selection-end="290" vertical-scroll-proportion="-10.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="65" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
@@ -549,16 +542,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/viewers_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/viewers/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="135" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+        <state line="16" column="65" selection-start="290" selection-end="290" vertical-scroll-proportion="-10.461538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/viewers/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="37" selection-start="657" selection-end="657" vertical-scroll-proportion="0.9156194">
+        <state line="30" column="101" selection-start="721" selection-end="721" vertical-scroll-proportion="-19.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/viewers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="398" selection-end="398" vertical-scroll-proportion="0.41754386">
           <folding />
         </state>
       </provider>
