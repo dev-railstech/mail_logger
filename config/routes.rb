@@ -1,7 +1,8 @@
 MailLogger::Application.routes.draw do
   resources :viewers
 
-  get '/shah/:name/data.gif' => 'viewers#new_log'
+  get '/shah/:name/data.gif' => 'viewers#new_log' , :as => :log
+  get '/viewers/remove/:id' => 'viewers#destroy' , :as => :remove
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

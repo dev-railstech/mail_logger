@@ -1,29 +1,34 @@
-<h1>Listing viewers</h1>
+<h1>Viewers</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Email</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>ID</th>
+      <th>Keywords</th>
+      <th>Viewed at</th>
     </tr>
   </thead>
 
   <tbody>
     <% @viewers.each do |viewer| %>
       <tr>
+        <td><%= viewer.id %></td>
         <td><%= viewer.name %></td>
-        <td><%= viewer.email %></td>
-        <td><%= link_to 'Show', viewer %></td>
-        <td><%= link_to 'Edit', edit_viewer_path(viewer) %></td>
-        <td><%= link_to 'Destroy', viewer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= viewer.created_at %></td>
+        <td><%= link_to 'Destroy', remove_path(viewer.id) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+<br/>
+<hr/>
+<h3>Generate Tracking URL</h3>
+<input type="text" placeholder="Tracking keyword" id="tracking_keyword" />
+<div id="tracker_url"></div>
+<hr/>
+<script>
+  $("#tracking_keyword").keyup(function(){
+      $("#tracker_url").html("http://<%= request.host_with_port %>/shah/"+ $(this).val() + "/data.png");
+  });
+</script>
 
-<br>
-
-<%= link_to 'New Viewer', new_viewer_path %>
