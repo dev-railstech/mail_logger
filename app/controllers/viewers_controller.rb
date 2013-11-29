@@ -5,7 +5,7 @@ class ViewersController < ApplicationController
   # GET /viewers
   # GET /viewers.json
   def index
-    @viewers = Viewer.all
+    @viewers = Viewer.all.order("created_at desc")
   end
 
   def new_log

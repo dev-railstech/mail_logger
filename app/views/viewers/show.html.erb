@@ -4,7 +4,7 @@
   <strong>Name:</strong>
   <%= @viewer.name %>
   <strong>Date:</strong>
-  <%= @viewer.created_at %>
+  <%= @viewer.created_at.in_time_zone("Asia/Karachi") %>
 </p>
 
 <p>
